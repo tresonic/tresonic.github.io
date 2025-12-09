@@ -59,14 +59,13 @@ In `/etc/hosts`:
 apt install zsh
 chsh -s $(which zsh)
 ```
-Install omz:
+Install terminfo:
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-set theme in `.zshrc`:
-```
-ZSH_THEME=bira
+apt install foot-terminfo
 ```
 
 ### Install Essential Packages
-```git zellij```
+```git```
+
+### docker
+<https://docs.docker.com/engine/install/debian/#install-using-the-repository>
