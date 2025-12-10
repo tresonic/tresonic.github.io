@@ -41,6 +41,7 @@ Remove `AcceptEnv LANG LC_*` to silence perl LC warnings
 
 ### Firewall Setup
 ```bash
+sudo apt install ufw
 ufw allow 62222/tcp
 ufw enable
 ```
@@ -65,7 +66,7 @@ apt install foot-terminfo
 ```
 
 ### Install Essential Packages
-```git```
+```git zoxide stow```
 
 ### docker
 <https://docs.docker.com/engine/install/debian/#install-using-the-repository>
