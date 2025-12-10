@@ -6,9 +6,12 @@ date: 2024-05-01
 - update
 - change root password if not set already
 
+### Install Essential Packages
+```zsh git zoxide stow ufw foot-terminfo```
+
 ### Add User with sudo Privileges
 ```bash
-adduser vpsadmin
+adduser vpsadmin --shell $(which zsh)
 usermod -aG sudo vpsadmin
 ```
 
@@ -41,7 +44,6 @@ Remove `AcceptEnv LANG LC_*` to silence perl LC warnings
 
 ### Firewall Setup
 ```bash
-sudo apt install ufw
 ufw allow 62222/tcp
 ufw enable
 ```
@@ -54,19 +56,6 @@ In `/etc/hosts`:
 ```
 127.0.1.1 newhostname
 ```
-
-### Change Shell
-```bash
-apt install zsh
-chsh -s $(which zsh)
-```
-Install terminfo:
-```bash
-apt install foot-terminfo
-```
-
-### Install Essential Packages
-```git zoxide stow```
 
 ### docker
 <https://docs.docker.com/engine/install/debian/#install-using-the-repository>
