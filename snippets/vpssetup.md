@@ -7,7 +7,7 @@ date: 2024-05-01
 - change root password if not set already
 
 ### Install Essential Packages
-```zsh git zoxide stow ufw foot-terminfo```
+```zsh git eza zoxide stow ufw foot-terminfo```
 
 ### Add User with sudo Privileges
 ```bash
